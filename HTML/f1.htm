@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="../CSS/f1.css">
+      <script src="../JAVA/f1.js"></script>
+        </head>
+    <body>
+      <div class="container pt-4">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="mytable">
+            <thead>
+              <tr>
+                <th class="text-center">Products</th>
+                <th class="text-center">Action</th>
+              </tr>
+              <tr>
+                <td>
+                  <select id="select1"  class="form-control stockCode" name="location">
+                    <option value="">select an item</option>
+                    <option value="item1">item1</option>
+                    <option value="item2">item2</option>
+                    <option value="item3">item3</option>
+                  </select>
+                </td>
+                <td> <button class="btn btn-danger" id="btn"
+                  >X</button></td>
+              </tr>
+            </thead>
+            <tbody id="location">
+              <!-- <tr>
+                <td>
+                  <select id="select1"  class="form-control stockCode" name="location">
+                    <option value="">select an item</option>
+                    <option value="item1">item1</option>
+                    <option value="item2">item2</option>
+                    <option value="item3">item3</option>
+                  </select>
+                </td>
+                <td> <button class="btn btn-danger kx-repeatable" onClick='deleteRow(this)'
+                  >X</button></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <button class="btn btn-md btn" onClick="addNewRow()" id="addBtn" type="button">+ Add</button>
+      </div>
+    </body>
+</html>
